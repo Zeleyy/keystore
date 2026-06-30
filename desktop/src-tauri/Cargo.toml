@@ -5,7 +5,6 @@ description = "A Tauri App"
 authors = ["Zeleyy"]
 edition = "2021"
 
-
 [lib]
 name = "keystore_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]

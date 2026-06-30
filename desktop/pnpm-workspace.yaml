@@ -1,0 +1,4 @@
+allowBuilds:
+  vue-demi: set this to true or false
+minimumReleaseAgeExclude:
+  - react-router-dom@7.18.1

@@ -1,0 +1,75 @@
+:where(
+    body, h1, h2, h3, h4, h5, h6,
+    form, label, input, textarea, button,
+    a, div, p, span, section, main,
+    audio, img, ul
+) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+}
+
+#root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+
+    &::-webkit-scrollbar {
+        max-width: 6px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--bg-secondary);
+        border-radius: 10px;
+
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    color: inherit;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-weight: 300;
+}
